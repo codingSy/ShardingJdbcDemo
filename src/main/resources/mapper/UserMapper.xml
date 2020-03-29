@@ -41,4 +41,10 @@
         where name = #{name}
     </select>
 
+    <select id="getByCreateTime" resultType="com.chengh.db.entity.User">
+        select user_id userId,name,sex,phone,email,password,create_time createTime
+        from t_user
+        where create_time >= #{createTime}
+    </select>
+
 </mapper>

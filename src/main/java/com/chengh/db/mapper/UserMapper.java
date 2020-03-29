@@ -39,5 +39,7 @@ public interface UserMapper {
      * @return
      */
     User getByName(String name);
+
+    List<User> getByCreateTime(@Param("createTime")String createTime);
 }
 

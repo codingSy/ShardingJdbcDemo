@@ -129,6 +129,14 @@ public class UserTest {
     }
 
     /**
+     * 根据时间范围获取用户
+     */
+    @Test
+    public void getByCreateTime (){
+        System.out.println(JSON.toJSON(userMapper.getByCreateTime("2020-01-01 00:00:00")));
+    }
+
+    /**
      * 获取商品
      */
     @Test
